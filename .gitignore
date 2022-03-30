@@ -1,0 +1,6 @@
+# Directore files
+.DS_Store
+*rsa*
+
+# Files
+dotfile_bk_*

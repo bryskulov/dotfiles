@@ -1,0 +1,6 @@
+[user]
+	name = bryskulov
+	email = bakbergen3@gmail.com
+
+[alias]
+    graph = log --all --graph --decorate --oneline
