@@ -23,4 +23,7 @@ shopt -s histappend;
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell;
 
-
+# Anaconda
+if [ -d "$HOME/anaconda3/bin" ] ; then
+    PATH="$HOME/anaconda3/bin:$PATH"
+fi
