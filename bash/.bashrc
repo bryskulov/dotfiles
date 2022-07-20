@@ -23,4 +23,15 @@ shopt -s histappend;
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell;
 
+# Add Homebrew to the PATH
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
+# Load pyenv automatically by adding
+# the following to ~/.zshrc:
+
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)" 
+eval "$(pyenv virtualenv-init -)"
+
+# Set terminal as vi
+set -o vi
