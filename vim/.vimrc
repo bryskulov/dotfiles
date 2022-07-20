@@ -1,4 +1,14 @@
-" Comments in Vimscript start with a `"`.
+" Ale configs
+let g:ale_linters = {'python': ['flake8']}
+let b:ale_fixers = {'*': [], 'python': ['black', 'isort']}
+
+" Set tab preferences for Python files"
+augroup python_files
+    autocmd!
+    autocmd FileType python setlocal noexpandtab
+    autocmd FileType python set tabstop=4
+    autocmd FileType python set shiftwidth=4
+augroup END
 
 " If you open this file in Vim, it'll be syntax highlighted for you.
 
