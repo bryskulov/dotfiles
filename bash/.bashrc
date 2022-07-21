@@ -35,3 +35,8 @@ eval "$(pyenv virtualenv-init -)"
 
 # Set terminal as vi
 set -o vi
+
+# Anaconda
+if [ -d "$HOME/anaconda3/bin" ] ; then
+    PATH="$HOME/anaconda3/bin:$PATH"
+fi
