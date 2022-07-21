@@ -17,8 +17,7 @@ augroup END
 " configuration option turns out not to be necessary for the file named
 " '~/.vimrc', because Vim automatically enters nocompatible mode if that file
 " is present. But we're including it here just in case this config file is
-" loaded some other way (e.g. saved as `foo`, and then Vim started with
-" `vim -u foo`).
+" loaded some other way (e.g. saved as `foo`, and then Vim started with `vim -u foo`).
 set nocompatible
 
 " Turn on syntax highlighting.
@@ -87,4 +86,6 @@ nnoremap <Down>  :echoe "Use j"<CR>
 inoremap <Left>  <ESC>:echoe "Use h"<CR>
 inoremap <Right> <ESC>:echoe "Use l"<CR>
 inoremap <Up>    <ESC>:echoe "Use k"<CR>
-inoremap <Down>  <ESC>:echoe "Use j"<CR>
+
+" Do not enter Visual mode when selecting
+:set mouse=v:wq
